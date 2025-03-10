@@ -1,0 +1,10 @@
+.brand {
+  display: block;
+  max-width: 13.25rem;
+  padding: 0.5em;
+}
+
+.brand--center {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,29 @@
+.columns {
+  --gapY: 4rem;
+  --gapX: 4rem;
+  --gap: var(--gapY) var(--gapX);
+  --align: center;
+
+  display: grid;
+  align-items: var(--align);
+  gap: var(--gap);
+  grid-auto-rows: min-content;
+}
+
+@media (--desktop) {
+  .columns {
+    grid-template-columns: var(--columns-desktop);
+  }
+}
+
+@media (--tablet) {
+  .columns {
+    grid-template-columns: var(--columns-tablet);
+  }
+}
+
+@media (--phone) {
+  .columns {
+    grid-template-columns: var(--columns-phone);
+  }
+}

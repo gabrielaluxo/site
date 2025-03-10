@@ -1,0 +1,44 @@
+<footer class="section footer">
+  <div class="container container--compact">
+    <div class="stack text-center">
+      <ul class="footer__contact">
+        <li>
+          <a href="mailto:contato@gabrielaluxo.com.br" target="_blank" rel="noopener" title="Enviar e-mail" aria-label="Enviar e-mail para contato@gabrielaluxo.com.br">
+            {{ partial "svg.html" (dict "viewBox" "0 0 24 24" "src" "/icons/mail.svg" "class" "icon icon--small") }}  
+            contato@gabrielaluxo.com.br
+          </a>
+        </li>
+        <li>
+          <a href="tel:+551141169700" target="_blank" rel="noopener" title="Ligar" aria-label="Ligar para (11) 4116-9700">
+            {{ partial "svg.html" (dict "viewBox" "0 0 24 24" "src" "/icons/phone.svg" "class" "icon icon--small") }}
+            (11) 4116-9700
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="footer__about">
+        <div class="content content--compact">
+          <p>Responsável técnica Dra. Gabriela Lamarca Luxo Martins | CRP 06/96928 © 2023</p>
+          <p><a href="/politica-de-privacidade/">Política de privacidade</a></p>
+        </div>
+      </div>
+      <ul class="footer__social"> 
+        <li>
+          <a href="https://www.instagram.com/gabrielaluxopsicologa/" target="_blank" rel="noopener" title="Instagram" aria-label="Abrir Instagram da Gabriela Luxo">
+            {{ partial "svg.html" (dict "viewBox" "0 0 24 24" "src" "/icons/instagram.svg" "class" "icon") }}
+          </a>
+        </li>
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=551141169700" target="_blank" rel="noopener" title="WhatsApp" aria-label="Enviar mensagem via WhatsApp">
+            {{ partial "svg.html" (dict "viewBox" "0 0 24 24" "src" "/icons/whatsapp.svg" "class" "icon") }}
+          </a>
+        </li>
+      </ul>
+      <div class="text-center">
+        <a class="brand brand--center" href="/" title="Voltar para a página inicial">
+          {{ partial "svg.html" (dict "viewBox" "0 0 215 30" "src" "/vectors/logo-gabriela-luxo.svg" "ariaLabel" "Gabriela Luxo") }}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

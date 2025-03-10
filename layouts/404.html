@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+  <section class="pagina-404">
+    <div class="container">
+      <div class="stack">
+        <div class="text-center">
+          <a class="brand brand--center" href="/" title="Voltar para a página inicial">
+            {{ partial "svg.html" (dict "viewBox" "0 0 212 27" "src" "/vectors/logo-gabriela-luxo.svg" "ariaLabel" "Gabriela Luxo") }}
+          </a>
+        </div>
+        <div class="content content--expansive text-center">
+          <h1 class="headline headline--lg">A página que você está procurando não foi encontrada.</h1>
+          <a class="button button--black" href="/">Voltar a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

@@ -1,0 +1,14 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--gray: #bdc2c8;
+	--beige: #f0e4d6;
+	--blue: #063246;
+	--light-blue: #97daff;
+}
+
+@custom-media --xsmall-phone (width < 21.25rem);
+@custom-media --small-phone (width < 32.5rem);
+@custom-media --phone (width < 48rem);
+@custom-media --tablet (48rem <= width < 65.5rem);
+@custom-media --desktop (width >= 65.5rem);

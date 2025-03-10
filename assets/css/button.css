@@ -1,0 +1,29 @@
+.button {
+  color: inherit;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button--black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.button--black:hover {
+  background: var(--blue);
+}
+
+.button--white {
+  background: var(--white);
+  color: var(--black);
+}
+
+.button--white:hover {
+  background: var(--gray);
+}

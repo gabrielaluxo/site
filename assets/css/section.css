@@ -1,0 +1,10 @@
+:where(.section) {
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+@media (--desktop) {
+  :where(.section) {
+    padding: 8rem 1.5rem;
+  }
+}

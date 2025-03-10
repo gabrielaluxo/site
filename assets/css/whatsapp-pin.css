@@ -1,0 +1,28 @@
+.whatsapp-pin {
+  --size: 3rem;
+
+  background: #25d366;
+  border-radius: 100px;
+  box-shadow: 1px 6px 24px rgba(7, 94, 84, 0.24);
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  height: var(--size);
+  width: var(--size);
+  padding: 0.5rem;
+
+  position: fixed;
+  right: 1.75rem;
+  bottom: 1.75rem;
+  transition: background 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.whatsapp-pin:hover {
+  background: #128c7e;
+}
+
+.whatsapp-pin svg {
+  width: 100%;
+  margin: auto;
+}

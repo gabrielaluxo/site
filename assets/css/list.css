@@ -1,0 +1,31 @@
+.list > * {
+  position: relative;
+}
+
+.list > * + * {
+  margin-top: 0.5em;
+}
+
+.list--expansive > * + * {
+  margin-top: 1em;
+}
+
+/*
+ * Bullet style.
+ */
+
+.list--bullet > * {
+  padding-left: 1em;
+}
+
+.list--bullet > *::before {
+  content: '';
+  display: inline-block;
+  background: currentColor;
+  border-radius: 1em;
+  position: absolute;
+  width: 0.2em;
+  height: 0.2em;
+  left: 0;
+  top: 0.6em;
+}

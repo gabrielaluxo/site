@@ -1,0 +1,15 @@
+.content {
+  --margin: 1.5rem;
+}
+
+.content--compact {
+  --margin: 1rem;
+}
+
+.content--expansive {
+  --margin: 2.5rem;
+}
+
+.content > * + * {
+  margin-top: var(--margin);
+}

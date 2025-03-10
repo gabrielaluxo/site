@@ -1,0 +1,25 @@
+/* Web Font Generator: https://www.fontsquirrel.com/tools/webfont-generator */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Regular'), url('/fonts/montserrat-regular.woff2') format('woff2'), url('/fonts/montserrat-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans-Light'), url('/fonts/opensans-light.woff2') format('woff2'), url('/fonts/opensans-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans-SemiBold'), url('/fonts/opensans-semibold.woff2') format('woff2'), url('/fonts/opensans-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

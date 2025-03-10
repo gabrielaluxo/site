@@ -1,0 +1,11 @@
+# Site settings
+baseURL: 'https://gabrielaluxo.com.br/'
+title: 'Gabriela Luxo'
+
+# Build settings
+enableRobotsTXT: yes
+disableHugoGeneratorInject: yes
+disableKinds: ['taxonomy', 'taxonomyTerm']
+
+# Language settings
+defaultContentLanguage: pt-br

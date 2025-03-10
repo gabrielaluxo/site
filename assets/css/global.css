@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline-color: var(--light-blue);
+  outline-style: solid;
+  outline-offset: 3px;
+}
+
+:focus:active {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Montserrat', serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+b,
+strong {
+  font-family: 'Open Sans', serif;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+svg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 0;
+}

@@ -1,0 +1,706 @@
+/* 
+ * ===================================================
+ * Section Hero
+ * ===================================================
+ */
+
+.hero {
+	background-color: #8b8a97;
+}
+
+@media (--desktop), (--tablet) {
+	.hero {
+		background-image: url(/images/bg-gabriela-luxo-hero.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: grid;
+		align-content: center;
+	}
+}
+
+@media (--desktop) {
+	.hero {
+		min-height: 100vh;
+	}
+}
+
+@media (--tablet) {
+	.hero {
+		min-height: 50vh;
+	}
+
+	.hero .content {
+		max-width: 30ch;
+	}
+}
+
+@media (--phone) {
+	.hero {
+		padding-top: 3rem;
+		padding-bottom: 0;
+	}
+
+	.hero picture {
+		position: relative;
+		margin-top: -4rem;
+	}
+
+	.hero picture::before {
+		content: '';
+		background: linear-gradient(180deg, #8b8a97 0%, rgba(139, 138, 151, 0) 100%);
+		position: absolute;
+		width: calc(100% + (2 * 1.5rem));
+		height: 10%;
+		top: 0;
+		left: -1.5rem;
+		z-index: 1;
+	}
+}
+
+/* 
+ * ===================================================
+ * Talvez voce tenha metas
+ * ===================================================
+ */
+
+.talvez-voce-tenha-metas {
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+.talvez-voce-tenha-metas ul {
+	display: grid;
+	text-align: center;
+	gap: 4rem;
+}
+
+.talvez-voce-tenha-metas h2 {
+	margin: auto;
+	max-width: 25ch;
+}
+
+.talvez-voce-tenha-metas svg {
+	margin: auto;
+	max-width: 12.5rem;
+}
+
+@media (--desktop), (--tablet) {
+	.talvez-voce-tenha-metas .columns {
+		grid-template-columns: auto 1fr;
+		max-width: 56rem;
+		margin: auto;
+	}
+}
+
+@media (--desktop) {
+	.talvez-voce-tenha-metas ul {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (--tablet) {
+	.talvez-voce-tenha-metas {
+		padding-bottom: 0;
+	}
+
+	.talvez-voce-tenha-metas ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (--phone) {
+	.talvez-voce-tenha-metas {
+		padding-bottom: 0;
+	}
+
+	.talvez-voce-tenha-metas .columns {
+		text-align: center;
+	}
+
+	.talvez-voce-tenha-metas ul {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.talvez-voce-tenha-metas h2 {
+		margin: auto;
+	}
+}
+
+/* 
+ * ===================================================
+ * Alguns problemas podem atrapalhar a sua evolução
+ * ===================================================
+ */
+
+.alguns-problemas {
+	min-height: 100vh;
+	display: grid;
+}
+
+.alguns-problemas .stack {
+	display: grid;
+	align-content: space-between;
+	height: 100%;
+	gap: 2rem;
+	max-height: 800px;
+}
+
+.alguns-problemas h2 {
+	margin: auto;
+	max-width: 25ch;
+}
+
+.alguns-problemas p {
+	max-width: 50ch;
+	margin: auto;
+}
+
+.alguns-problemas span {
+	display: block;
+	text-align: center;
+}
+
+.alguns-problemas ul {
+	position: relative;
+	height: 8em;
+	display: grid;
+	place-items: center;
+}
+
+.alguns-problemas li {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transform-origin: center bottom;
+	will-change: transform, opacity;
+}
+
+.alguns-problemas__bottom-content {
+	will-change: transform, opacity;
+}
+
+@media (--desktop), (--tablet) {
+	.alguns-problemas .columns {
+		grid-template-columns: auto 1fr;
+		max-width: 56rem;
+		margin: auto;
+	}
+}
+
+@media (--phone) {
+	.alguns-problemas {
+		text-align: center;
+	}
+
+	.alguns-problemas h2 {
+		margin: auto;
+	}
+
+	.alguns-problemas .headline--md {
+		font-size: 1.5rem;
+		line-height: 1.4;
+	}
+}
+
+/* 
+ * ===================================================
+ * Gabriela Luxo
+ * ===================================================
+ */
+
+.gabriela-luxo {
+	margin-bottom: -1px;
+	background-color: #c2c1c9;
+}
+
+@media (--desktop), (--tablet) {
+	.gabriela-luxo {
+		height: 100vh;
+		display: grid;
+		place-content: center;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@media (--desktop) {
+	.gabriela-luxo {
+		background-image: url(/images/bg-gabriela-luxo-desktop.jpg);
+		max-height: 56.25rem;
+	}
+
+	.gabriela-luxo h2 {
+		max-width: 21ch;
+		transform: translateX(15%);
+	}
+}
+
+@media (--desktop) and (max-width: 1140px) {
+	.gabriela-luxo h2 {
+		transform: inherit;
+	}
+}
+
+@media (--tablet) {
+	.gabriela-luxo {
+		background-image: url(/images/bg-gabriela-luxo-tablet.jpg);
+		max-height: 37.5rem;
+	}
+
+	.gabriela-luxo h2 {
+		max-width: 16ch;
+		transform: translateX(50%);
+		font-size: 2.25rem;
+	}
+
+	.gabriela-luxo h2 span {
+		display: block;
+	}
+}
+
+@media (--phone) {
+	.gabriela-luxo {
+		padding-bottom: 0;
+		text-align: center;
+	}
+
+	.gabriela-luxo h2 span {
+		display: block;
+	}
+
+	.gabriela-luxo picture {
+		position: relative;
+		margin-top: -4rem;
+	}
+
+	.gabriela-luxo picture::before {
+		content: '';
+		background: linear-gradient(180deg, #c2c1c9 0%, rgba(139, 138, 151, 0) 100%);
+		position: absolute;
+		width: calc(100% + (2 * 1.5rem));
+		height: 10%;
+		top: 0;
+		left: -1.5rem;
+		z-index: 1;
+	}
+}
+
+/* 
+ * ===================================================
+ * Sobre
+ * ===================================================
+ */
+
+.parallax-animation {
+	position: relative;
+	height: 100vh;
+
+	/* Make the background has the color of above and below sections to avoid a white flash when scrolling */
+	background: linear-gradient(180deg, var(--black) 0%, var(--gray) 100%);
+}
+
+/*  */
+
+.sobre {
+	color: var(--gray);
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+	text-align: center;
+
+	position: relative;
+	z-index: 1;
+}
+
+.sobre-background {
+	background: var(--black);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	z-index: -1;
+}
+
+.sobre-content {
+	position: relative;
+}
+
+.sobre h2 {
+	color: var(--white);
+	max-width: 26ch;
+	margin: auto;
+}
+
+/* 
+ * ===================================================
+ * Vamos conversar
+ * ===================================================
+ */
+
+.vamos-conversar {
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+
+	/* Avoid horizontal scroll, since the background when scaled is wider than the viewport */
+	overflow: hidden;
+}
+
+.vamos-conversar-background {
+	/* Make background image fill the whole section */
+	position: absolute;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: -2;
+	will-change: transform;
+}
+
+.vamos-conversar-background img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.vamos-conversar-vignette {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	z-index: -1;
+	will-change: opacity;
+}
+
+.vamos-conversar-vignette::before {
+	/* Create a vignette effect */
+	content: '';
+	background: linear-gradient(
+		to bottom,
+		hsl(0, 0%, 0%) 0%,
+		hsla(0, 0%, 0%, 0.738) 19%,
+		hsla(0, 0%, 0%, 0.541) 34%,
+		hsla(0, 0%, 0%, 0.382) 47%,
+		hsla(0, 0%, 0%, 0.278) 56.5%,
+		hsla(0, 0%, 0%, 0.194) 65%,
+		hsla(0, 0%, 0%, 0.126) 73%,
+		hsla(0, 0%, 0%, 0.075) 80.2%,
+		hsla(0, 0%, 0%, 0.042) 86.1%,
+		hsla(0, 0%, 0%, 0.021) 91%,
+		hsla(0, 0%, 0%, 0.008) 95.2%,
+		hsla(0, 0%, 0%, 0.002) 98.2%,
+		hsla(0, 0%, 0%, 0) 100%
+	);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.vamos-conversar-content {
+	/* Center content vertically */
+	color: var(--white);
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 10rem;
+	display: grid;
+	align-content: center;
+	will-change: opacity;
+}
+
+/* 
+ * ===================================================
+ * Pontos de destaque na mídia:
+ * ===================================================
+ */
+
+.na-midia {
+	background: var(--gray);
+}
+
+.na-midia a {
+	transition: opacity 0.3s ease-in-out;
+}
+
+.na-midia a:hover {
+	opacity: 0.75;
+}
+
+.na-midia ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.na-midia svg {
+	display: block;
+	height: 4rem;
+	width: auto;
+}
+
+/* 
+ * ===================================================
+ * Footer
+ * ===================================================
+ */
+
+.footer {
+	background-color: var(--black);
+	color: var(--white);
+	font-size: 1rem;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.footer a:hover {
+	opacity: 0.5;
+}
+
+.footer__contact {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+}
+
+.footer__contact a {
+	display: inline-flex;
+	gap: 0.5em;
+	align-items: center;
+}
+
+.footer__contact svg {
+	width: 100%;
+	max-width: 1.25em;
+	margin-top: 0.1em;
+}
+
+.footer__social {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+.footer__social a {
+	display: block;
+	padding: 0.25em;
+}
+
+.footer__social svg {
+	display: block;
+	width: 100%;
+	max-width: 1.5em;
+}
+
+/* 
+ * ===================================================
+ * 404
+ * ===================================================
+ */
+
+.pagina-404 {
+	background-color: #f7f1eb;
+	height: 100vh;
+	width: 100%;
+
+	display: grid;
+	place-content: center;
+}
+
+.pagina-404 h1 {
+	max-width: 27ch;
+	margin: auto;
+}
+
+/* 
+ * ===================================================
+ * Politicas de privacidade
+ * ===================================================
+ */
+
+@media (--phone), (--tablet) {
+	.politica-de-privacidade {
+		font-size: 1.125rem;
+	}
+}
+
+/* */
+
+.politica-de-privacidade__nav {
+	background: var(--white);
+	border-radius: 0.5rem;
+	box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
+}
+
+.politica-de-privacidade__nav nav {
+	border-radius: 0.5rem;
+	padding: 2rem;
+}
+
+.politica-de-privacidade__nav ol {
+	list-style: none;
+	counter-reset: summary;
+}
+
+.politica-de-privacidade__nav li {
+	counter-increment: summary;
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+}
+
+.politica-de-privacidade__nav li::before {
+	content: counter(summary) '. ';
+	display: block;
+	font-size: 1.25em;
+	min-width: 1.25em;
+	text-align: center;
+	position: relative;
+}
+
+.politica-de-privacidade__nav a {
+	text-decoration: none;
+}
+
+@media (--desktop) {
+	.politica-de-privacidade__nav {
+		position: sticky;
+		top: 4rem;
+		will-change: transform;
+	}
+
+	.politica-de-privacidade__nav nav {
+		padding: 3rem;
+	}
+}
+
+/* */
+
+.politica-de-privacidade__content {
+	min-width: 0;
+}
+
+.politica-de-privacidade__content .content > .headline + p {
+	--margin: 1.5rem;
+}
+
+.politica-de-privacidade__content > li + li,
+.politica-de-privacidade__content ol > li + li {
+	padding-top: 2.5rem;
+}
+
+.politica-de-privacidade__content li {
+	word-break: break-word;
+}
+
+.politica-de-privacidade__content ol,
+.politica-de-privacidade__content ol > li {
+	padding-left: 0.75rem;
+}
+
+.politica-de-privacidade__content,
+.politica-de-privacidade__content > li {
+	padding-left: 0;
+}
+
+.politica-de-privacidade__content ol {
+	counter-reset: section;
+}
+
+.politica-de-privacidade__content > li {
+	counter-increment: section;
+}
+
+.politica-de-privacidade__content > li > ol {
+	counter-reset: clause;
+}
+
+.politica-de-privacidade__content > li > ol > li {
+	counter-increment: clause;
+}
+
+.politica-de-privacidade__content > li > ol > li > ol {
+	counter-reset: item;
+}
+
+.politica-de-privacidade__content > li > ol > li > ol > li {
+	counter-increment: item;
+}
+
+.politica-de-privacidade__content h2:before {
+	content: counter(section) '. ';
+}
+
+.politica-de-privacidade__content h3:before {
+	content: counter(section) '.' counter(clause) '. ';
+}
+
+.politica-de-privacidade__content h4:before {
+	content: counter(section) '.' counter(clause) '. ' counter(clause) '. ';
+}
+
+.politica-de-privacidade__content h5:before {
+	content: counter(section) '.' counter(clause) '.' counter(item) '. ';
+}
+
+/* */
+
+.politica-de-privacidade__table {
+	min-width: calc(100% + 3rem);
+	position: relative;
+	left: -1.5rem;
+	overflow: auto;
+	padding: 0 1.5rem;
+
+	font-size: 0.875rem;
+}
+
+.politica-de-privacidade__table table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.politica-de-privacidade__table thead {
+	background: var(--black);
+	color: var(--white);
+}
+
+.politica-de-privacidade__table__wrapper {
+	min-width: min-content;
+}
+
+.politica-de-privacidade__table td,
+.politica-de-privacidade__table th {
+	padding: 1em;
+}
+
+.politica-de-privacidade__table tbody td:nth-child(even) {
+	min-width: 15.75rem;
+}
+
+.politica-de-privacidade__table tbody td:nth-child(odd) {
+	min-width: 8.75rem;
+}
+
+.politica-de-privacidade__table tbody tr:nth-child(odd) {
+	background: #fbfbfb;
+}
